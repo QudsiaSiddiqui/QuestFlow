@@ -1,36 +1,89 @@
 # QuestFlow
 
-QuestFlow is a full-stack task management and gamification application built with **Spring Boot** (backend) and **React** (frontend). 
-It allows users to register, log in, manage tasks, earn XP, and level up as they complete tasks.
-The app also features a **dark/light mode toggle** for a modern UI experience.
+QuestFlow is a full-stack, gamified task management application designed to make productivity engaging and rewarding.
+
+Users can create tasks, complete them to earn XP, and track their progress visually through levels and progress bars.
 
 ---
 
 ## Features
 
-- **User Authentication**  
-  - Register and login functionality.
-  - Secure password handling (currently simple, can be extended to hashed passwords).
+### User Authentication
+- Register and login functionality
+- Session-based authentication flow
 
-- **Task Management**  
-  - Add, view, and complete tasks.
-  - Earn XP for completed tasks.
-  - Dynamic task list update after completion.
+### Task Management
+- Create new tasks
+- View all tasks associated with a user
+- Complete tasks to earn XP
 
-- **Gamification**  
-  - XP and level system based on tasks.
-  - Progress bar indicating XP towards next level.
+### Gamification
+- XP-based leveling system
+- Progress bar showing XP toward the next level
+- Instant stat updates after task completion
 
-- **Responsive UI**  
-  - Dark/Light theme toggle.
-  - Modern, clean interface.
+### User Interface
+- Built with React
+- Light and dark mode toggle
+- Clean, centered, modern layout
 
 ---
 
 ## Tech Stack
 
-- **Backend**: Java, Spring Boot, Spring MVC, Spring Data JPA
-- **Frontend**: React, Axios, CSS (custom styling)
-- **Database**: H2 (or any other relational DB, configurable)
-- **Build Tools**: Maven for backend, npm for frontend
+### Backend
+- Java
+- Spring Boot
+- Spring MVC
+- Spring Data JPA
+
+### Frontend
+- React
+- Axios
+- CSS
+
+### Database
+- H2 (easily replaceable with MySQL or PostgreSQL)
+
+### Build Tools
+- Maven
+- npm
+
+---
+
+### Project Structure
+
+### Backend
+
+- controller – REST APIs for authentication, users, and tasks
+
+- service – business logic for XP, leveling, and task handling
+
+- repository – database access using JPA
+
+- entity – User and Task models
+
+### Frontend
+
+- App.js – application state and navigation
+
+- Profile.js – user details and XP progress
+
+- Task.js – task creation and completion
+
+- Login.js / Register.js – authentication screens
+
+- App.css – styling and theme management
+
+### Application Flow
+
+- User registers or logs in
+
+- User creates tasks
+
+- Completing a task rewards XP
+
+- XP updates level and progress bar
+
+- UI updates instantly to reflect changes
 
