@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-QuestFlowApplication<QuestFlow>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.QuestFlow.QuestFlow.QuestFlowApplication",
+            "projectName": "QuestFlow",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
